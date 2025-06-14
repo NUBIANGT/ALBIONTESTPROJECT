@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albion Online Guia - Mercado e Builds</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Albion Online Guia">
+                <h1>Albion Online Guia</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#mercado"><i class="fas fa-coins"></i> Mercado</a></li>
+                    <li><a href="#builds"><i class="fas fa-swords"></i> Builds</a></li>
+                    <li><a href="#guias"><i class="fas fa-book"></i> Guias</a></li>
+                    <li><a href="#ferramentas"><i class="fas fa-tools"></i> Ferramentas</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>O Guia Completo de Albion Online</h2>
+                <p>Tudo sobre mercado, builds eficientes e estratégias para dominar o mundo de Albion</p>
+                <a href="#builds" class="btn">Ver Builds Populares</a>
+            </div>
+        </section>
+
+        <section id="mercado" class="market-section">
+            <div class="container">
+                <h2><i class="fas fa-chart-line"></i> Análise de Mercado</h2>
+                <div class="market-filters">
+                    <select id="tier-select">
+                        <option value="all">Todos os Tiers</option>
+                        <option value="4">Tier 4</option>
+                        <option value="5">Tier 5</option>
+                        <option value="6">Tier 6</option>
+                        <option value="7">Tier 7</option>
+                        <option value="8">Tier 8</option>
+                    </select>
+                    <select id="city-select">
+                        <option value="all">Todas as Cidades</option>
+                        <option value="bridgewatch">Bridgewatch</option>
+                        <option value="fortsterling">Fort Sterling</option>
+                        <option value="lymhurst">Lymhurst</option>
+                        <option value="martlock">Martlock</option>
+                        <option value="thetford">Thetford</option>
+                        <option value="caerleon">Caerleon</option>
+                    </select>
+                </div>
+                <div class="market-table-container">
+                    <table class="market-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Tier</th>
+                                <th>Preço Compra</th>
+                                <th>Preço Venda</th>
+                                <th>Lucro</th>
+                                <th>Cidade</th>
+                                <th>Demanda</th>
+                            </tr>
+                        </thead>
+                        <tbody id="market-data">
+                            <!-- Dados serão preenchidos via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="builds" class="builds-section">
+            <div class="container">
+                <h2><i class="fas fa-chess"></i> Builds Populares</h2>
+                <div class="build-filters">
+                    <button class="filter-btn active" data-filter="all">Todas</button>
+                    <button class="filter-btn" data-filter="pvp">PvP</button>
+                    <button class="filter-btn" data-filter="pve">PvE</button>
+                    <button class="filter-btn" data-filter="zvz">ZvZ</button>
+                    <button class="filter-btn" data-filter="gvg">GvG</button>
+                </div>
+                <div class="builds-grid" id="builds-container">
+                    <!-- Builds serão carregadas via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="guias" class="guides-section">
+            <div class="container">
+                <h2><i class="fas fa-graduation-cap"></i> Guias e Tutoriais</h2>
+                <div class="guides-grid">
+                    <article class="guide-card">
+                        <img src="guide1.jpg" alt="Guia para Iniciantes">
+                        <h3>Guia Completo para Iniciantes</h3>
+                        <p>Aprenda os conceitos básicos e como começar com o pé direito em Albion Online</p>
+                        <a href="#" class="btn">Ler Guia</a>
+                    </article>
+                    <article class="guide-card">
+                        <img src="guide2.jpg" alt="Economia">
+                        <h3>Como Ganhar Prata</h3>
+                        <p>Estratégias avançadas de mercado e crafting para maximizar seus lucros</p>
+                        <a href="#" class="btn">Ler Guia</a>
+                    </article>
+                    <article class="guide-card">
+                        <img src="guide3.jpg" alt="PvP">
+                        <h3>Dominando o PvP</h3>
+                        <p>Técnicas avançadas de combate e builds meta para duelos e combates em grupo</p>
+                        <a href="#" class="btn">Ler Guia</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="ferramentas" class="tools-section">
+            <div class="container">
+                <h2><i class="fas fa-calculator"></i> Ferramentas Úteis</h2>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <i class="fas fa-coins"></i>
+                        <h3>Calculadora de Crafting</h3>
+                        <p>Calcule os custos e lucros potenciais de itens craftados</p>
+                        <a href="#" class="btn">Acessar</a>
+                    </div>
+                    <div class="tool-card">
+                        <i class="fas fa-map"></i>
+                        <h3>Mapas Interativos</h3>
+                        <p>Explore todos os mapas de Albion com rotas e pontos de interesse</p>
+                        <a href="#" class="btn">Acessar</a>
+                    </div>
+                    <div class="tool-card">
+                        <i class="fas fa-swords"></i>
+                        <h3>Simulador de Builds</h3>
+                        <p>Teste combinações de equipamentos e habilidades</p>
+                        <a href="#" class="btn">Acessar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sobre Nós</h3>
+                    <p>O Albion Online Guia é um projeto da comunidade para ajudar jogadores de todos os níveis.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#mercado">Mercado</a></li>
+                        <li><a href="#builds">Builds</a></li>
+                        <li><a href="#guias">Guias</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Conecte-se</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Albion Online Guia. Não afiliado à Sandbox Interactive.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
